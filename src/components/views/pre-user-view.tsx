@@ -10,7 +10,7 @@ export function PreUserView({ onSuccess, onError }: PreUserViewData) {
     return (
         <Card className="w-full max-w-[350px] shadow-lg">
             <CardHeader className="text-center">
-                <CardTitle className="text-xl sm:text-2xl">UTEC Attendance</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">Attendance</CardTitle>
                 <CardDescription>Inicia sesión con tu cuenta de Google de UTEC.</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col items-center">
