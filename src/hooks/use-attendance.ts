@@ -33,7 +33,7 @@ export function useAttendance() {
         setStatus("loading")
 
         try {
-            const response = await fetch(url, {
+            const response = await fetch(`${ url }/attendance`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -48,8 +48,7 @@ export function useAttendance() {
                 }),
             })
 
-            const json = await response.json();
-            const status = json.status_code;
+            const status = response.status;
 
             switch (status) {
                 case 400:
